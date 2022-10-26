@@ -80,7 +80,7 @@ public class ConfigSecurity extends WebSecurityConfigurerAdapter{
 	public UserDetailsService userDetail() {
 		InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
 		manager.createUser(
-				User.withUsername("administrador")
+				User.withUsername("leo")
 				.password(encriptado().encode("123"))
 				.roles("ADMIN")
 				.build());
